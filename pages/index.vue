@@ -1,28 +1,50 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        nuxt-bulma-css-vars
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
+      <article class="panel is-primary">
+        <p class="panel-heading">
+          Primary
+        </p>
+        <p class="panel-tabs">
+          <a class="is-active">All</a>
+          <a>Public</a>
+          <a>Private</a>
+          <a>Sources</a>
+          <a>Forks</a>
+        </p>
+        <div class="panel-block">
+          <p class="control has-icons-left">
+            <input class="input is-primary" type="text" placeholder="Search">
+            <span class="icon is-left">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </span>
+          </p>
+        </div>
+        <a class="panel-block is-active">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          bulma
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          marksheet
         </a>
-      </div>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          minireset.css
+        </a>
+        <a class="panel-block">
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          jgthms.github.io
+        </a>
+      </article>
     </div>
   </div>
 </template>
@@ -43,33 +65,4 @@ export default Vue.extend({})
   text-align: center;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
